@@ -20,7 +20,7 @@ dolphin 是一个的资产风险分析系统,用户仅需将一个主域名添�
 
 
 ## 感谢
-1. 项目UI体验,灵感来自于oxbug大佬的biu系统`https://github.com/0xbug/Biu`
+1. 项目UI体验,灵感来自于0xbug大佬的biu系统`https://github.com/0xbug/Biu`
 2. 底层由蜻蜓驱动,地址`http://qingting.starcross.cn/scenario/detail?id=2054`
 
 
