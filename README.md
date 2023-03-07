@@ -17,6 +17,12 @@
 
 微信:songboy8888
 
+
+感谢:
+1. 项目UI体验,灵感来自于oxbug大佬的biu系统`https://github.com/0xbug/Biu`
+2. 底层由蜻蜓驱动,地址`http://qingting.starcross.cn/scenario/detail?id=2054`
+
+
 ## 效果图
 
 ![](http://oss.songboy.site/blog/20230307120424.png)
@@ -40,9 +46,6 @@
 
 ----
 
-感谢:
-1. 项目UI体验,灵感来自于oxbug大佬的biu系统`https://github.com/0xbug/Biu`
-2. 底层由蜻蜓驱动,地址`http://qingting.starcross.cn/scenario/detail?id=2054`
 
 ## Stargazers over time
 
