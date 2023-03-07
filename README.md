@@ -18,7 +18,7 @@
 微信:songboy8888
 
 
-感谢:
+## 感谢
 1. 项目UI体验,灵感来自于oxbug大佬的biu系统`https://github.com/0xbug/Biu`
 2. 底层由蜻蜓驱动,地址`http://qingting.starcross.cn/scenario/detail?id=2054`
 
