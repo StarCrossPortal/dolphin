@@ -56,7 +56,7 @@
                             <td>{$item['search_keyword']}</td>
                             <td>
 
-                                <div class="box"><?php echo basename($item['file_name']) ?></div>
+                                <div class="box" style="max-width: 260px;"><?php echo basename($item['file_name']) ?></div>
 
 
                             </td>
@@ -68,7 +68,7 @@
                             </td>
                             <td>
 
-                                <textarea class="form-control" disabled>{$item['leak_content']}</textarea>
+                                <textarea style="width: 400px;" class="form-control" disabled>{$item['leak_content']}</textarea>
                             </td>
                             <td>{$item['create_time']}</td>
                             <td>
