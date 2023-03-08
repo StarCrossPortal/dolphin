@@ -7,11 +7,11 @@ dolphin 是一个的资产风险分析系统,用户仅需将一个主域名添�
 
 
 ## 安装方法
-1. 将项目下载到你本地 
-3. 新建一个数据库,把`xinxishouji.sql`文件导入进去 
-4. 复制`.example.env`为`.env`,并修改数据库地址信息 
-5. 启动docker`docker run -it -d -p 8686:80 -v $(pwd):/root/code  --name dolphin  registry.cn-beijing.aliyuncs.com/daxia/qingting:dolphin`
-6. 更新依赖`docker exec -it dolphin bash -c 'cd /root/code && composer install'`
+1. 将项目下载到你本地
+2. 新建MySQL数据库,把`xinxishouji.sql`文件导入进去 
+3. 复制`.example.env`为`.env`,并修改数据库地址信息 
+4. 启动docker`docker run -it -d -p 80:80 -v $(pwd):/root/code  --name dolphin  daxia/qingting:dolphin`
+5. 安装依赖`docker exec -it dolphin bash -c 'cd /root/code && composer install'`
 6. 浏览器打开地址:`http://xxxx/admin/home/index`
 
 ## 联系我们
