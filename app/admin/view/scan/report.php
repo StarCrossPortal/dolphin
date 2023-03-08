@@ -76,6 +76,7 @@
                         <tr>
                             <th style="color:#aaa;">id</th>
                             <th style="color:#aaa;">URL</th>
+                            <th style="color:#aaa;">标签</th>
                             <th style="color:#aaa;">主机</th>
                             <th style="color:#aaa;">端口</th>
                             <th style="color:#aaa;">标签</th>
@@ -92,6 +93,10 @@
                                         <?php echo parse_url($item['url'])['path'] ?>
                                     </a>
                                 </td>
+                                <td><?php
+                                    foreach ($item['tags'] as $tag) { ?>
+                                        <span style="color:#666" class="badge bg-Light">{$tag}</span>
+                                    <?php } ?></td>
                                 <td>{$item['host']}</td>
                                 <td>{$item['port']}</td>
                                 <td>{$tag}</td>

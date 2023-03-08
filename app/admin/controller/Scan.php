@@ -22,6 +22,11 @@ class Scan extends Common
         ]);
         $bugList['list'] = $list->items();
         $bugList['page'] = $list->render();
+
+        foreach ($bugList['list'] as &$item) {
+            $item['tags'] = json_decode($item['tags'], true);
+        }
+
         $data = ['countList' => $countList, 'bugList' => $bugList];
 
         return View::fetch('report', $data);
