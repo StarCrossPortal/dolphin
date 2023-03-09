@@ -13,15 +13,16 @@ dolphin 是一个的资产风险分析系统,用户仅需将一个主域名添�
 4. 新建MySQL数据库,把`xinxishouji.sql`文件导入进去
 5. 复制`.example.env`为`.env`,并修改数据库地址信息
 6. 浏览器打开地址:`http://xxxx/admin/home/index`
+7. 蜻蜓流配置 http://qingting.starcross.cn/scenario/detail?id=2054
 
 ## 联系我们
 
 微信:songboy8888
-![](http://oss.songboy.site/blog/1_587402316_171_85_3_671325813_37a2c7491bd38a3a01c1fe0c1f35c886.png)
+
+![](https://oss.songboy.site/blog/%E6%96%B0%E5%BB%BA%E9%A1%B9%E7%9B%AE%20(2).png)
 
 ## 感谢
 1. 项目UI体验,灵感来自于0xbug大佬的biu系统`https://github.com/0xbug/Biu`
-2. 底层由蜻蜓驱动,地址`http://qingting.starcross.cn/scenario/detail?id=2054`
 
 
 ## 效果图
