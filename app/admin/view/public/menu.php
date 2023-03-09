@@ -70,7 +70,7 @@ foreach ($MenuArr as $key=>$val) {
 </style>
 <nav class="navbar navbar-expand-lg bg-custom-menu" aria-label="Tenth navbar example">
     <div class="container">
-        <a class="navbar-brand" href="/"><img src="http://qingting.starcross.cn/static/logo.svg" style="max-height:35px"></a>
+        <a class="navbar-brand" href="/"><img src="/static/images/logo.png" style="max-height:35px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08"
                 aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

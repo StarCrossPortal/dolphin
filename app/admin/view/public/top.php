@@ -1,7 +1,7 @@
 <html>
 <head>
     <title><?php echo $title ?? '信息收集' ?></title>
-    <link rel="shortcut icon" href="http://qtadmin.qingting.starcross.cn/static/logo1.svg" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/static/images/logo_blue.png" type="image/x-icon"/>
     <script crossorigin="anonymous" src="https://lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
     <link crossorigin="anonymous" href="https://lib.baomitu.com/twitter-bootstrap/5.2.3/css/bootstrap.min.css"
           rel="stylesheet">
