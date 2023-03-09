@@ -13,7 +13,7 @@ class BugsModel extends Model
     public static function getCount(string $domain, int $projectId)
     {
         $data = [];
-        $where = [  ['host','like',"%{$domain}"], ['project_id', '=', $projectId]];
+        $where = [['host', 'like', "%{$domain}"], ['project_id', '=', $projectId]];
 
         $data['全部'] = Db::table('bugs')->where($where)->count();
         $data['严重'] = Db::table('bugs')->where($where)->where(['level' => 1])->cache(60)->count();
@@ -33,13 +33,14 @@ class BugsModel extends Model
         //修复率
         $repairNum = Db::table('bugs')->where($where)->where(['is_repair' => 1])->count();
         $unRepairNum = Db::table('bugs')->where($where)->where(['is_repair' => 0])->count();
+        $repairCount = (empty($repairNum) && empty($unRepairNum)) ? 0 : intval($repairNum / $unRepairNum);
 
         //漏洞等级
-        $level1 = Db::table('bugs')->where($where)->where(['level'=>1])->count();
-        $level2 = Db::table('bugs')->where($where)->where(['level'=>2])->count();
-        $level3 = Db::table('bugs')->where($where)->where(['level'=>3])->count();
-        $level4 = Db::table('bugs')->where($where)->where(['level'=>4])->count();
-        $level5 = Db::table('bugs')->where($where)->where(['level'=>5])->count();
+        $level1 = Db::table('bugs')->where($where)->where(['level' => 1])->count();
+        $level2 = Db::table('bugs')->where($where)->where(['level' => 2])->count();
+        $level3 = Db::table('bugs')->where($where)->where(['level' => 3])->count();
+        $level4 = Db::table('bugs')->where($where)->where(['level' => 4])->count();
+        $level5 = Db::table('bugs')->where($where)->where(['level' => 5])->count();
 
 
         $countList = [
@@ -56,7 +57,7 @@ class BugsModel extends Model
                     '外网 ' => Db::table('bugs')->whereTime('create_time', '>=', date('Y-m-d', time() - (7 * 86400)))->where(['project_id' => 1])->group('host')->count()
                 ]
             ],
-            ['name' => '修复率', 'num' => intval($repairNum / $unRepairNum), 'lists' => ['待修复' => $unRepairNum, '已修复' => $repairNum]],
+            ['name' => '修复率', 'num' => $repairCount, 'lists' => ['待修复' => $unRepairNum, '已修复' => $repairNum]],
             ['name' => '严重漏洞(个)', 'num' => $level1,
                 'lists' => [
                     '高危' => $level2,
