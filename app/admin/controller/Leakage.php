@@ -12,11 +12,12 @@ class Leakage extends Common
     public function index(Request $request)
     {
         $where = ['project_id' => 1];
+        $totalNum = Db::table('info_leak')->where($where)->count();
         $mainList = Db::table('info_leak')->where($where)->select()->toArray();
         foreach ($mainList as &$item) {
             $item['tags'] = json_decode($item['tags'], true);
         }
-        $data = ['mainList' => $mainList];
+        $data = ['mainList' => $mainList,'totalNum'=>$totalNum];
 
         return View::fetch('index', $data);
     }

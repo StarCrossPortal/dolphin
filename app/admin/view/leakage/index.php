@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-4">
                     <h6 style="color:#ccc;">泄露总数</h6>
-                    <h4>983</h4>
+                    <h4>{$totalNum}</h4>
                 </div>
 
                 <div class="col-8">

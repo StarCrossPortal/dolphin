@@ -92,21 +92,21 @@ foreach ($MenuArr as $key=>$val) {
                             </div>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown08">
-                            <li>
-                                <a class="dropdown-item" href="{:url('auth/user_info')}">
-                                    个人资料
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="{:url('auth/user_password')}">
-                                    修改密码
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="{:url('login/logout')}">
-                                    退出登录
-                                </a>
-                            </li>
+<!--                            <li>-->
+<!--                                <a class="dropdown-item" href="{:url('auth/user_info')}">-->
+<!--                                    个人资料-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a class="dropdown-item" href="{:url('auth/user_password')}">-->
+<!--                                    修改密码-->
+<!--                                </a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a class="dropdown-item" href="{:url('login/logout')}">-->
+<!--                                    退出登录-->
+<!--                                </a>-->
+<!--                            </li>-->
                         </ul>
                     </li>
                 </ul>

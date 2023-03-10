@@ -23,14 +23,14 @@
                     </div>
                     <div>
                         <div style="margin-bottom: 10px;">
-                            <span><input class="form-control" type="text" placeholder="请填写蜻蜓Token"></span>
+                            <span><input class="form-control" type="text" placeholder="请填写蜻蜓Token" value="{$projectConf['QT_TOKEN'] ?? ''}"></span>
                         </div>
                         <div style="margin-bottom: 10px;">
-                            <span><input class="form-control" type="text" placeholder="请填写工作流ID"></span>
+                            <span><input class="form-control" type="text" placeholder="请填写工作流ID" value="{$projectConf['QT_ID'] ?? ''}"></span>
                         </div>
                         <div style="margin-bottom: 10px;">
                             <span>
-                                <textarea class="form-control" placeholder='全局变量参数 {"xxx":"xxx"}'></textarea>
+                                <textarea class="form-control" placeholder='全局变量参数 {"xxx":"xxx"}'>{$projectConf['QT_CONF'] ?? ''}</textarea>
                             </span>
                         </div>
 
