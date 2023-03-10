@@ -9,7 +9,7 @@ dolphin 是一个的资产风险分析系统,用户仅需将一个主域名添�
 ## 安装方法
 
 1. 一键部署控制台 `wget https://gitee.com/songboy/dolphin/raw/master/docker-compose.yaml && docker-compose up -d`
-2. 浏览器打开地址:`http://xx.xx.xx.xx/`
+2. 浏览器打开地址:`http://xx.xx.xx.xx:1880/`
 
 > 在设置填写蜻蜓配置,蜻蜓工作流模板为:http://qingting.starcross.cn/scenario/detail?id=2054
 
