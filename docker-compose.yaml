@@ -2,7 +2,7 @@ version: "3.2"
 services:
   mysql:
     image: daxia/dolphin:mysql57
-    container_name: mysqlser
+    container_name: mysql
     environment:
       - MYSQL_ROOT_PASSWORD=123
       - TZ=Asia/Shanghai
@@ -18,7 +18,7 @@ services:
     image: daxia/dolphin:latest
     container_name: dolphin
     links:
-      - "dolphin_mysql:mysql_host"
+      - "mysql:mysql_host"
     environment:
       - TZ=Asia/Shanghai
     ports:
