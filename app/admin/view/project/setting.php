@@ -30,7 +30,7 @@
                         </div>
                         <div style="margin-bottom: 10px;">
                             <span>
-                                <textarea class="form-control" placeholder='全局变量参数 {"xxx":"xxx"}'>{$projectConf['QT_CONF'] ?? ''}</textarea>
+                                <textarea rows="4" class="form-control" placeholder='全局变量参数 {"xxx":"xxx"}'>{$projectConf['QT_CONF'] ?? ''}</textarea>
                             </span>
                         </div>
 

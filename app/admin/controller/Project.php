@@ -14,7 +14,8 @@ class Project extends Common
 
         $projectId = 1;
         $where = ['project_id' => $projectId];
-        $projectConf = Db::table('project_conf')->where($where)->select('value','key');
+        $projectConf = Db::table('project_conf')->where($where)->column('value','key');
+
         $mainList = Db::table('setting_domain')->where($where)->select()->toArray();
         $urlsList = Db::table('urls')->where('project_id', 1)->select()->toArray();
         $data = ['mainList' => $mainList, 'urlsList' => $urlsList,'projectConf'=>$projectConf];
