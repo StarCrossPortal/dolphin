@@ -4,7 +4,7 @@ services:
     image: daxia/dolphin:mysql57
     container_name: mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=123
+      - MYSQL_ROOT_PASSWORD=dolphin123!
       - TZ=Asia/Shanghai
     ports:
       - "33306:3306"
