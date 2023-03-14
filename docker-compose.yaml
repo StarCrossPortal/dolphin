@@ -3,11 +3,10 @@ services:
   mysql:
     image: daxia/dolphin:mysql57
     container_name: mysql
+    network_mode: host
     environment:
       - MYSQL_ROOT_PASSWORD=dolphin123!
       - TZ=Asia/Shanghai
-    ports:
-      - "33306:3306"
     restart: always
     command:
       --wait_timeout=31536000
@@ -17,12 +16,9 @@ services:
   dolphin:
     image: daxia/dolphin:latest
     container_name: dolphin
-    links:
-      - "mysql:mysql_host"
+    network_mode: host
     environment:
       - TZ=Asia/Shanghai
-    ports:
-      - "1880:80"
     restart: always
     volumes:
       - type: bind

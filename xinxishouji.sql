@@ -144,7 +144,7 @@ CREATE TABLE `project_conf` (
   `project_id` int(11) DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `un_key` (`project_id`,`key`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=352 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=364 DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS `setting_domain`;
 CREATE TABLE `setting_domain` (
