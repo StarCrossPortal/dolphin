@@ -2,14 +2,14 @@
 <?php
 
 $qtConfDemo = '{
-    "fofa_email": "fofa",
-    "fofa_token": "fofa",
-    "github_token": "fofa",
-    "mysql_db_name": "fofa",
-    "mysql_host": "fofa",
-    "mysql_password": "fofa",
-    "mysql_port": "fofa",
-    "mysql_username": "fofa"
+    "fofa_email": "xxxxxxx",
+    "fofa_token": "xxxxxxx",
+    "github_token": "xxxxxxx",
+    "mysql_db_name": "root",
+    "mysql_host": "xxxxxxx",
+    "mysql_password": "dolphin123!",
+    "mysql_port": "3306",
+    "mysql_username": "root"
 }';
 ?>
 <style>
