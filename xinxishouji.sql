@@ -25,7 +25,7 @@ CREATE TABLE `domain` (
   `create_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `un_domain` (`domain`)
-) ENGINE=InnoDB AUTO_INCREMENT=1416 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=1422 DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS `info_leak`;
 CREATE TABLE `info_leak` (
@@ -143,8 +143,8 @@ CREATE TABLE `project_conf` (
   `name` varchar(255) DEFAULT NULL,
   `project_id` int(11) DEFAULT '1',
   PRIMARY KEY (`id`),
-  UNIQUE KEY `un_key` (`id`,`key`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+  UNIQUE KEY `un_key` (`project_id`,`key`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=352 DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS `setting_domain`;
 CREATE TABLE `setting_domain` (
@@ -154,7 +154,7 @@ CREATE TABLE `setting_domain` (
   `create_time` datetime DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `un_domain` (`domain`)
-) ENGINE=InnoDB AUTO_INCREMENT=1414 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=1420 DEFAULT CHARSET=utf8mb4;
 
 DROP TABLE IF EXISTS `urls`;
 CREATE TABLE `urls` (

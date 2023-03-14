@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d80bd5b0dc1f17311fbdfb7b167aee09",
+    "content-hash": "93e51e7de3ba8e57cded26c9c1b8fef8",
     "packages": [
         {
             "name": "league/flysystem",
@@ -191,6 +191,58 @@
                 }
             ],
             "time": "2022-04-17T13:12:02+00:00"
+        },
+        {
+            "name": "liliuwei/thinkphp-jump",
+            "version": "v1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/liliuwei/thinkphp-jump.git",
+                "reference": "481d41b922095f08230609919be5d19354c50540"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.huaweicloud.com/repository/php/liliuwei/thinkphp-jump/v1.5/liliuwei-thinkphp-jump-v1.5.zip",
+                "reference": "481d41b922095f08230609919be5d19354c50540",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0",
+                "topthink/framework": "^6.0",
+                "topthink/think-view": "^1.0"
+            },
+            "type": "think-extend",
+            "extra": {
+                "think": {
+                    "config": {
+                        "jump": "src/config/jump.php"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "liliuwei\\think\\": "src/"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "liliuwei",
+                    "email": "974829947@qq.com"
+                }
+            ],
+            "description": "适用于thinkphp6.0的跳转扩展",
+            "keywords": [
+                "error",
+                "redirect",
+                "result",
+                "success",
+                "think-jump",
+                "thinkphp"
+            ],
+            "time": "2020-03-20T15:11:56+00:00"
         },
         {
             "name": "psr/cache",
@@ -1101,8 +1153,10 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.2.5"
+        "php": ">=7.2.5",
+        "ext-curl": "*",
+        "ext-json": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }

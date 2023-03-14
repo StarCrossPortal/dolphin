@@ -3,10 +3,11 @@ declare (strict_types=1);
 
 namespace app\admin\controller;
 
+use app\BaseController;
 use think\facade\Db;
 use think\facade\View;
 
-class Common
+class Common extends BaseController
 {
 
     public function __construct()
@@ -36,6 +37,7 @@ class Common
         View::assign('menu_list', $menuList);
         View::assign('userInfo', ['headimgurl' => $headImg]);
     }
+
 
     protected function apiReturn($data = [], $status = 0, $msg = '', $isRaw = false)
     {

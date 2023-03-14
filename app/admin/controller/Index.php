@@ -3,6 +3,7 @@ declare (strict_types=1);
 
 namespace app\admin\controller;
 
+use app\admin\model\DomainModel;
 use think\facade\Db;
 use think\facade\View;
 use think\Request;

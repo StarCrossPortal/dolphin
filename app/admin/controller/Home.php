@@ -3,6 +3,7 @@ declare (strict_types=1);
 
 namespace app\admin\controller;
 
+use app\admin\model\DomainModel;
 use app\admin\model\PortsModel;
 use app\admin\model\ProductCateModel;
 use app\admin\model\ProductsModel;
