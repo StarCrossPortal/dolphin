@@ -138,7 +138,7 @@ DROP TABLE IF EXISTS `project_conf`;
 CREATE TABLE `project_conf` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `key` varchar(255) DEFAULT NULL,
-  `value` varchar(255) DEFAULT NULL,
+  `value` text,
   `create_time` datetime DEFAULT CURRENT_TIMESTAMP,
   `name` varchar(255) DEFAULT NULL,
   `project_id` int(11) DEFAULT '1',
