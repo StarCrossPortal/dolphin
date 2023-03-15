@@ -34,20 +34,7 @@
             <?php } ?>
 
         </div>
-        <div class="row" style="margin-bottom: 20px;padding:10px; ">
-            <div class="col-12" style="border-radius: 10px;border: 1px solid #eee;">
-               <div style="padding: 10px;">
-                   <p class="home_title">图标</p>
-                   <?php foreach ($imgList as $item) { ?>
-                       <span style="width: 52px;height: 52px;">
-                    <span style="margin: 10px; width: 32px;height: 32px;">
-                        <img src="{$item['src']}">
-                    </span>
-                    </span>
-                   <?php } ?>
-               </div>
-            </div>
-        </div>
+
         <div class="row" style="margin-bottom: 20px;">
             <?php foreach ($otherList as $item) { ?>
                 <div class="col-3">
